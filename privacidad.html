@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de privacidad · Estudio Suite</title>
+  <meta name="description" content="Política de privacidad de Estudio Suite y uso de los datos de Google Calendar.">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<main>
+  <h1>Política de privacidad</h1>
+  <p class="sub">Estudio Suite · Vigente desde el 30 de octubre de 2026</p>
+
+  <p>Estudio Suite es un programa de gestión para estudios contables, desarrollado y operado por
+  Fernando Van Cauteren (en adelante, «nosotros»). Esta política explica qué datos de Google usa el
+  programa, para qué y cómo se protegen. Se refiere solo a la integración con Google Calendar,
+  que cada usuario activa por su cuenta y de forma voluntaria.</p>
+
+  <h2>Qué datos de Google usamos</h2>
+  <p>Al conectar su cuenta, el usuario autoriza dos permisos:</p>
+  <ul>
+    <li><strong>Ver sus calendarios</strong> (<code>calendar.readonly</code>): la lista de
+    calendarios de la cuenta y los eventos de los que el usuario elige. Se usan solo para
+    mostrárselos a ese mismo usuario, en el inicio y en el calendario de Estudio Suite.</li>
+    <li><strong>Administrar los calendarios que crea la app</strong>
+    (<code>calendar.app.created</code>): para crear el calendario «Estudio Suite» en su cuenta y
+    escribir en él los vencimientos del estudio que tiene a su cargo. Con este permiso, la app no
+    puede leer ni modificar los demás calendarios del usuario.</li>
+  </ul>
+  <p>También conocemos la dirección de correo de la cuenta conectada, que el programa muestra
+  para que el usuario sepa qué cuenta usa.</p>
+
+  <h2>Qué guardamos y dónde</h2>
+  <ul>
+    <li>En el servidor de Estudio Suite del estudio guardamos la dirección de la cuenta, los
+    calendarios elegidos, el identificador del calendario «Estudio Suite» y el permiso que
+    entrega Google (token de actualización). El permiso se guarda cifrado (AES-256-GCM) y nunca
+    queda en la computadora del usuario.</li>
+    <li><strong>Los eventos de los calendarios del usuario no se guardan en la base de
+    datos.</strong> Se leen de Google cuando se van a mostrar y el servidor los conserva en
+    memoria unos minutos, para no repetir la consulta.</li>
+    <li>Cada usuario ve solo sus propios calendarios: ni los demás usuarios del estudio ni los
+    administradores pueden ver los eventos de otra persona.</li>
+  </ul>
+
+  <h2>Con quién los compartimos</h2>
+  <p>Con nadie. No vendemos los datos de Google ni los usamos para publicidad. No los
+  transferimos a terceros ni los usamos para entrenar modelos de inteligencia artificial, y la
+  función de asistente con IA de Estudio Suite no tiene acceso a ellos. Las personas del equipo
+  no los leen, salvo que el propio usuario lo pida para resolver un problema o lo exija la
+  ley.</p>
+  <p>El uso y la transferencia a cualquier otra aplicación de la información recibida de las
+  API de Google se ajustan a la
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Datos
+  del Usuario de los Servicios de las API de Google</a>, incluidos los requisitos de Uso
+  Limitado.</p>
+
+  <h2>Cómo desconectar la cuenta y borrar los datos</h2>
+  <ul>
+    <li>En Estudio Suite, <em>Configuración › Preferencias › Integraciones › Google Calendar ›
+    Desconectar</em> borra del servidor la conexión y el permiso, borra de la cuenta el
+    calendario «Estudio Suite» y le pide a Google que revoque el permiso.</li>
+    <li>También se puede revocar desde la cuenta de Google, en
+    <a href="https://myaccount.google.com/connections">Conexiones con apps y servicios de
+    terceros</a>. En ese caso, el servidor borra la conexión la próxima vez que intenta
+    usarla.</li>
+  </ul>
+
+  <h2>Cambios y contacto</h2>
+  <p>Si esta política cambia, publicaremos la nueva versión en esta página con su fecha. Por
+  cualquier consulta sobre privacidad, escribinos a
+  <a href="mailto:cardinaldev@gmail.com">cardinaldev@gmail.com</a>.</p>
+
+  <footer><a href="index.html">Estudio Suite</a></footer>
+</main>
+</body>
+</html>
